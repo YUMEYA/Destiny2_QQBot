@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "qqbot"
+version = "0.1.0"
+description = ""
+authors = ["YUMEYA <shiaobo8@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.0.0a16"
+httpx = "^0.21.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+
+[tool.isort]
+profile = "black"
